@@ -1,0 +1,15 @@
+﻿# Maven #
+targe
+# IDEA忽略的文件#
+.idea/
+*iml
+# Eclipse #
+.settings/
+.metadata/
+.classpath
+.project
+Servers/
+/bin/
+/target/
+/.recommenders/
+/RemoteSystemsTempFiles/

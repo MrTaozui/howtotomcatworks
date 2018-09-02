@@ -38,6 +38,7 @@ public class Response {
 			int ch=fis.read(bytes, 0, BUFFER_SIZE);
 			while(ch!=-1){
 				output.write(bytes, 0, ch);
+				System.out.println(new String(bytes));
 				ch=fis.read(bytes,0,BUFFER_SIZE);
 			}
 		}else{

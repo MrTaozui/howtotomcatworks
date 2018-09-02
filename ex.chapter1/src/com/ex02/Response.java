@@ -86,8 +86,9 @@ public class Response implements ServletResponse{
 		return null;
 	}
 	public PrintWriter getWriter() throws IOException {
-		// TODO Auto-generated method stub
-		return null;
+		// autoflash 为true的时候  println() 刷新 否则不
+		writer=new PrintWriter(output,true);
+		return writer;
 	}
 	public boolean isCommitted() {
 		// TODO Auto-generated method stub

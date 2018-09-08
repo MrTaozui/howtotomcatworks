@@ -91,31 +91,24 @@ public class Response implements ServletResponse{
 		return writer;
 	}
 	public boolean isCommitted() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 	public void reset() {
-		// TODO Auto-generated method stub
 		
 	}
 	public void resetBuffer() {
-		// TODO Auto-generated method stub
 		
 	}
 	public void setBufferSize(int arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 	public void setContentLength(int arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 	public void setContentType(String arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 	public void setLocale(Locale arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 		

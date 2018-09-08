@@ -9,14 +9,14 @@ import java.net.Socket;
 import com.ex02.Request;
 import com.ex02.Response;
 
-public class HttpServer1 {
+public class HttpServer2 {
 	//关闭命令
 	private static final String SHUTDOWN_COMMAND="/SHUTDOWN";
 	//是否收到关闭命令
 	private boolean shutdown=false;
 	
 	public static void main(String[] args) {
-		HttpServer1 server=new HttpServer1();
+		HttpServer2 server=new HttpServer2();
 		server.await();
 	}
 
@@ -51,7 +51,7 @@ public class HttpServer1 {
 				//检查 请求是否是一个servlet 或者是静态 资源
 				//检查servlet请求以 "/servlet" 开头
 				if(request.getUri().startsWith("/servlet")){
-					ServletProcessor1 processor=new ServletProcessor1();
+					ServletProcessor2 processor=new ServletProcessor2();
 					processor.process(request, response);
 				}else{
 					StaticResourceProcessor processor=new StaticResourceProcessor();
